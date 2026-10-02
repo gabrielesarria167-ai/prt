@@ -1,0 +1,109 @@
+---
+title: Carrozzeria PRT – Carrozzeria a Isola della Scala (VR)
+description: Carrozzeria PRT a Isola della Scala (Verona): riparazioni di carrozzeria, levabolli, lucidatura, gestione sinistri, auto sostitutiva gratuita e soccorso stradale 24/7.
+nav: home
+---
+<section class="hero">
+  <div class="hero__media">
+    <img src="img/hero-cabina.webp" alt="" width="1920" height="1280" fetchpriority="high">
+  </div>
+  <div class="container">
+    <div class="hero__inner">
+      <h1>PRT Carrozzeria <span class="hero__place">di Isola della Scala</span></h1>
+      <p class="hero__lead">Riparazioni di carrozzeria per auto di ogni marca, gestione completa del sinistro, auto sostitutiva gratuita e soccorso stradale 24 ore su 24.</p>
+      <div class="btn-row">
+        <a class="btn btn--red" href="{{ phone_href }}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Chiama {{ phone }}</a>
+        <a class="btn btn--wa" href="{{ whatsapp_repair_href }}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+        <a class="btn btn--ghost" href="{{ email_href }}"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="facts" aria-label="In evidenza">
+  <div class="container facts__grid">
+    <a class="fact" href="auto-sostitutiva.html">
+      <span class="fact__title">Auto sostitutiva gratuita</span>
+      <span class="fact__text">Un'auto di cortesia per tutta la durata della riparazione.</span>
+    </a>
+    <a class="fact" href="soccorso-stradale.html">
+      <span class="fact__title">Soccorso stradale 24/7</span>
+      <span class="fact__text">Carro attrezzi giorno e notte, festivi compresi.</span>
+    </a>
+    <a class="fact" href="convenzioni.html">
+      <span class="fact__title">Convenzioni assicurative</span>
+      <span class="fact__text">Accordi con le principali compagnie e società di noleggio.</span>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split__media">
+      <img src="img/officina.webp" alt="Carrozziere al lavoro in cabina di verniciatura" width="1200" height="1800" loading="lazy" style="object-position: 50% 30%">
+    </div>
+    <div class="split__body">
+      <h2>Al servizio dell'automobilista</h2>
+      <p class="lead">Carrozzeria P.R.T. ripara auto di ogni marca e modello a Isola della Scala, in tempi certi e senza pensieri per te.</p>
+      <p>Seguiamo ogni lavoro dall'inizio alla fine: dal recupero del veicolo con il nostro soccorso stradale alla pratica con l'assicurazione, fino alla riconsegna dell'auto riparata. Nel frattempo, non resti a piedi.</p>
+      <ul class="checklist">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Riparazioni su auto di ogni marca e modello</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Assistenza completa nella gestione del sinistro</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Auto sostitutiva gratuita durante i lavori</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Soccorso stradale attivo 24 ore su 24</li>
+      </ul>
+      <a class="link-arrow" href="chi-siamo.html">Chi siamo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <h2>I nostri servizi</h2>
+      <p>Dalla piccola ammaccatura al danno strutturale, ci occupiamo di tutto noi.</p>
+    </div>
+    {% include services-cards %}
+  </div>
+</section>
+
+{% include sos-band %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Come lavoriamo</h2>
+      <p>Un solo interlocutore, dal primo contatto alla riconsegna.</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <h3>Contattaci</h3>
+        <p>Chiamaci, scrivici su WhatsApp o via email. Se l'auto non è marciante, interveniamo con il soccorso stradale.</p>
+      </li>
+      <li class="step">
+        <h3>Valutazione</h3>
+        <p>Esaminiamo il danno e ti spieghiamo l'intervento necessario, i tempi e i costi.</p>
+      </li>
+      <li class="step">
+        <h3>Riparazione</h3>
+        <p>Ripariamo l'auto e, se c'è un sinistro, gestiamo la pratica con l'assicurazione. Intanto guidi la nostra auto sostitutiva.</p>
+      </li>
+      <li class="step">
+        <h3>Riconsegna</h3>
+        <p>Ti riconsegniamo l'auto riparata, controllata e pronta per tornare su strada.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <h2>Convenzioni assicurative</h2>
+      <p>Lavoriamo in convenzione con assicurazioni e società di noleggio: meno pratiche e tempi più rapidi per te. <a href="convenzioni.html">Tutte le convenzioni</a></p>
+    </div>
+    {% include partners %}
+  </div>
+</section>
+
+{% include cta-band %}

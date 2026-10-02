@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ canonical }}">
+  <meta name="theme-color" content="#003ba2">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="{{ name }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ site_url }}/img/og-image.jpg">
+  <link rel="icon" href="img/icon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/icon-180.png">
+  <link rel="preload" href="fonts/roboto-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoBodyShop",
+    "name": "{{ legal_name }}",
+    "alternateName": "Carrozzeria PRT – Car Service",
+    "url": "{{ site_url }}/",
+    "logo": "{{ site_url }}/img/logo-960.png",
+    "image": "{{ site_url }}/img/og-image.jpg",
+    "telephone": "+39 045 730 1121",
+    "faxNumber": "+39 045 664 0099",
+    "email": "{{ email }}",
+    "vatID": "IT{{ vat }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ street }}",
+      "postalCode": "{{ zip }}",
+      "addressLocality": "{{ city }}",
+      "addressRegion": "{{ province }}",
+      "addressCountry": "IT"
+    }
+  }
+  </script>
+</head>
+<body>
+{% include icons %}
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <a class="topbar__item topbar__item--sos" href="{{ mobile_href }}">
+      <svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>
+      <span><strong>Soccorso stradale 24/7</strong> <span class="topbar__num">{{ mobile }}</span></span>
+    </a>
+    <div class="topbar__right">
+      <a class="topbar__item" href="{{ email_href }}"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>{{ email }}</a>
+      <span class="topbar__item"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>{{ city }} ({{ province }})</span>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Carrozzeria PRT – torna alla home">
+      <picture>
+        <source srcset="img/logo-480.webp 1x, img/logo-960.webp 2x" type="image/webp">
+        <img src="img/logo-480.png" alt="PRT Carrozzeria Car Service" width="480" height="317">
+      </picture>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-nav-toggle>
+      <svg class="icon icon--open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon icon--close" aria-hidden="true"><use href="#i-close"/></svg>
+      <span class="visually-hidden">Menu</span>
+    </button>
+
+    <nav class="nav" id="menu" aria-label="Menu principale" data-nav>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html"{{ nav_home }}>Home</a></li>
+        <li><a class="nav__link" href="chi-siamo.html"{{ nav_chi-siamo }}>Chi siamo</a></li>
+        <li class="nav__has-sub" data-sub>
+          <div class="nav__sub-head">
+            <a class="nav__link" href="servizi.html"{{ nav_servizi }}>Servizi</a>
+            <button class="nav__sub-toggle" type="button" aria-expanded="false" aria-controls="sub-servizi" data-sub-toggle>
+              <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+              <span class="visually-hidden">Mostra i servizi</span>
+            </button>
+          </div>
+          <ul class="nav__sub" id="sub-servizi">
+            <li><a href="riparazione-carrozzeria.html">Riparazione carrozzeria</a></li>
+            <li><a href="levabolli-grandine.html">Levabolli e danni da grandine</a></li>
+            <li><a href="lucidatura.html">Lucidatura con nanotecnologia</a></li>
+            <li><a href="gestione-sinistri.html">Gestione sinistri</a></li>
+            <li><a href="auto-sostitutiva.html">Auto sostitutiva gratuita</a></li>
+            <li><a href="soccorso-stradale.html">Soccorso stradale 24/7</a></li>
+          </ul>
+        </li>
+        <li><a class="nav__link" href="convenzioni.html"{{ nav_convenzioni }}>Convenzioni</a></li>
+        <li><a class="nav__link" href="contatti.html"{{ nav_contatti }}>Contatti</a></li>
+      </ul>
+      <a class="btn btn--red nav__cta" href="{{ phone_href }}">
+        <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>{{ phone }}
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenuto">
+{% content %}
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="site-footer__logo" href="index.html">
+        <img src="img/logo-480.webp" alt="PRT Carrozzeria Car Service" width="480" height="317" loading="lazy">
+      </a>
+      <p>Carrozzeria a Isola della Scala. Riparazioni per auto di ogni marca, gestione dei sinistri, auto sostitutiva gratuita e soccorso stradale 24 ore su 24.</p>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Servizi</h2>
+      <ul class="site-footer__links">
+        <li><a href="riparazione-carrozzeria.html">Riparazione carrozzeria</a></li>
+        <li><a href="levabolli-grandine.html">Levabolli e grandine</a></li>
+        <li><a href="lucidatura.html">Lucidatura</a></li>
+        <li><a href="gestione-sinistri.html">Gestione sinistri</a></li>
+        <li><a href="auto-sostitutiva.html">Auto sostitutiva</a></li>
+        <li><a href="soccorso-stradale.html">Soccorso stradale 24/7</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Contatti</h2>
+      <ul class="site-footer__contacts">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="{{ phone_href }}">{{ phone }}</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><a href="{{ whatsapp_href }}" target="_blank" rel="noopener">{{ mobile }}</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="{{ email_href }}">{{ email }}</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-printer"/></svg><span>Fax {{ fax }}</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><a href="{{ maps_href }}" target="_blank" rel="noopener">{{ street }}<br>{{ zip }} {{ city }} ({{ province }})</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Informazioni</h2>
+      <ul class="site-footer__links">
+        <li><a href="chi-siamo.html">Chi siamo</a></li>
+        <li><a href="convenzioni.html">Convenzioni assicurative</a></li>
+        <li><a href="contatti.html#dove-siamo">Dove siamo</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-footer__legal">
+    <div class="container">
+      <p>© {{ year }} {{ legal_name }} · {{ street }}, {{ zip }} {{ city }} ({{ province }}) · P.IVA {{ vat }}</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="action-bar" aria-label="Contatto rapido">
+  <a href="{{ phone_href }}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Chiama</a>
+  <a href="{{ whatsapp_href }}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+  <a href="{{ email_href }}"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+</nav>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

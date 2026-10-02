@@ -1,0 +1,46 @@
+---
+title: I nostri servizi – Carrozzeria PRT, Isola della Scala
+description: Riparazione carrozzeria, levabolli e danni da grandine, lucidatura con nanotecnologia, gestione sinistri, auto sostitutiva gratuita e soccorso stradale 24/7 a Isola della Scala.
+nav: servizi
+---
+<section class="page-hero">
+  <div class="page-hero__media"><img src="img/carrozzeria.webp" alt="" width="1200" height="2120" style="object-position: 50% 60%"></div>
+  <div class="container">
+    <div class="page-hero__inner">
+      <nav aria-label="Percorso"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Servizi</li></ol></nav>
+      <h1>I nostri servizi</h1>
+      <p>Dalla piccola ammaccatura al danno strutturale, dalla pratica assicurativa al soccorso stradale: ci occupiamo di tutto noi.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <h2 class="visually-hidden">Elenco dei servizi</h2>
+    {% include services-cards %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split split--reverse">
+    <div class="split__media">
+      <img src="img/auto-sostitutiva.webp" alt="Consegna delle chiavi dell'auto sostitutiva" width="1200" height="1800" loading="lazy" style="object-position: 50% 35%">
+    </div>
+    <div class="split__body">
+      <h2>Servizi pensati per non lasciarti a piedi</h2>
+      <p class="lead">Un incidente è già abbastanza stressante. Per questo abbiamo raccolto tutto in un'unica carrozzeria.</p>
+      <ul class="checklist">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Auto sostitutiva gratuita</strong> per tutta la durata della riparazione</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Soccorso stradale 24/7</strong> con recupero del veicolo fino in carrozzeria</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Gestione del sinistro</strong> e rapporti con la compagnia assicurativa</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Convenzioni</strong> con le principali assicurazioni e società di noleggio</span></li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn--red" href="{{ phone_href }}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Chiama</a>
+        <a class="btn btn--wa" href="{{ whatsapp_href }}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include cta-band %}
