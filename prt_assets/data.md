@@ -7,7 +7,7 @@ Location: Via Alessandro Pompei 5 | 37063 Isola della Scala (VR, Italy)
 Partita Iva: 04430910234
 Phone: +39 0457301121
 Fax: 0456640099
-Email: carrozzeriaprt@autorepair.it
+Email: assistenza@carrozzeriaprt.it (forwards to the previous address, carrozzeriaprt@autorepair.it)
 
 Auto sostitutiva gratuita
 Soccorso stradale 24/7

@@ -47,8 +47,8 @@ SITE = {
     "whatsapp_sos_href": "https://wa.me/393482486842?text="
     + "Buongiorno%20Carrozzeria%20PRT%2C%20ho%20bisogno%20del%20soccorso%20stradale.",
     "fax": "045 664 0099",
-    "email": "carrozzeriaprt@autorepair.it",
-    "email_href": "mailto:carrozzeriaprt@autorepair.it"
+    "email": "assistenza@carrozzeriaprt.it",
+    "email_href": "mailto:assistenza@carrozzeriaprt.it"
     + "?subject=Richiesta%20informazioni%20dal%20sito",
     "maps_href": "https://www.google.com/maps/search/?api=1&query="
     + "Carrozzeria+PRT+Via+Alessandro+Pompei+5+37063+Isola+della+Scala+VR",
