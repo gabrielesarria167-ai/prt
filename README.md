@@ -36,4 +36,4 @@ prt_assets/         # original material supplied by the client
 
 - **Contact details** live in `SITE` inside `build.py`. Change them there and rebuild.
 - In pages and partials, `{{ key }}` inserts a value from `SITE` and `{% include name %}` inserts `src/partials/name.html`.
-- Photos are Unsplash stock images (see `static/img/CREDITS.md`). Replace them with real workshop photos and keep the same filenames.
+- Photos are the workshop's own, except two Unsplash stock images (`grandine.webp`, `auto-sostitutiva.webp`); see `static/img/CREDITS.md`.
